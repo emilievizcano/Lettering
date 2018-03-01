@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>This is about letters</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/colorbox.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="scripts/jquery.lettering.js"></script>
+    <script src="scripts/jquery.colorbox-min.js"></script>
+
+
+  </head>
+  <body>
+
+
+          <h1 class="fancy_title"> This is about letters</h1>
+
+
+    <a class='gallery' href='images/image01.jpg'>this is a picture</a>
+     <a class='gallery' href='images/image02.jpg'>Photo_2</a>
+     <a class='gallery' href='image3.jpg'>Photo_3</a>
+
+
+  <script>
+      $(document).ready(function() {
+      $(".fancy_title").lettering();
+      });
+  </script>
+  <script>
+    jQuery('a.gallery').colorbox();
+  </script>
+  </body>
+</html>
